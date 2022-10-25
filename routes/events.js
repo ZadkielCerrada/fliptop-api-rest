@@ -1,10 +1,10 @@
 var express = require("express");
 var router = express.Router();
-var jsonFile = require("../emcees.json");
+var jsonFile = require("../events.json");
 const fs = require("fs");
-const fileName = "emcees.json";
+const fileName = "events.json";
 
-router.get("/", function (req, res) {
+router.get("/", function (_, res) {
   res.send(jsonFile);
 });
 
